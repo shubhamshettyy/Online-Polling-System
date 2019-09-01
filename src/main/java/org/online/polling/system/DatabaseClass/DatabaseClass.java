@@ -1,13 +1,27 @@
-package org.online.polling.system.Database;
+package org.online.polling.system.DatabaseClass;
 
 import org.online.polling.system.Questions.QuestionModel;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class DatabaseClass {
     private static Map<Long, QuestionModel> questions = new HashMap<>();
 
+    public Connection getConnnection() {
+        Connection connection = null;
+        try {
+            String connectionURL = "jdbc:mysql://localhost:3306/questions";
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            connection = DriverManager.getConnection(connectionURL, "root", "test");
+        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+        return connection;
+    }
     public static Map<Long, QuestionModel> getQuestions() {
         return questions;
     }

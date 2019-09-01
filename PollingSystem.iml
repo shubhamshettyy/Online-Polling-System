@@ -43,5 +43,6 @@
     <orderEntry type="library" name="Maven: org.eclipse:yasson:1.0.3" level="project" />
     <orderEntry type="library" name="Maven: jakarta.json.bind:jakarta.json.bind-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: jakarta.json:jakarta.json-api:1.1.5" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.36" level="project" />
   </component>
 </module>

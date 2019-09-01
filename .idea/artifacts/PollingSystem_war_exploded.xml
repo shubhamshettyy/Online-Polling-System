@@ -28,6 +28,7 @@
           <element id="library" level="project" name="Maven: org.eclipse:yasson:1.0.3" />
           <element id="library" level="project" name="Maven: jakarta.json.bind:jakarta.json.bind-api:1.0.1" />
           <element id="library" level="project" name="Maven: jakarta.json:jakarta.json-api:1.1.5" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.36" />
         </element>
       </element>
       <element id="directory" name="META-INF">
