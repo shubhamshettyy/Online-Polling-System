@@ -18,8 +18,7 @@ public class QuestionResource {
     @PUT
     @Path("/{question_id}")
     public QuestionModel updateQuestion(@PathParam("question_id") long id, QuestionModel question) {
-        question.setId(id);
-        return questionService.updateQuestion(question);
+        return questionService.updateQuestion(id,question);
     }
 
 
@@ -32,7 +31,7 @@ public class QuestionResource {
 
     @GET
     @Path("/{question_id}")
-    public QuestionModel getQuestion(@PathParam("question_id") long id) {
+    public List<QuestionModel> getQuestion(@PathParam("question_id") long id) {
         return questionService.getQuestion(id);
     }
 

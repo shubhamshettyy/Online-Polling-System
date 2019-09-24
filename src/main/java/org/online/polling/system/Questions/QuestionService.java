@@ -2,10 +2,7 @@ package org.online.polling.system.Questions;
 
 import org.online.polling.system.DatabaseClass.DatabaseClass;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -22,7 +19,6 @@ public class QuestionService {
 
     public List<QuestionModel> getAllQuestions()
     {
-
         QuestionModel question = new QuestionModel();
         List<QuestionModel> list=new ArrayList<>();
         try{
@@ -35,6 +31,7 @@ public class QuestionService {
                         rs.getString("option4"));
                 list.add(question);
             }
+            connection.close();
         }
         catch(SQLException e){
             e.printStackTrace();
@@ -43,31 +40,81 @@ public class QuestionService {
         //return new ArrayList<QuestionModel>(questionsMap.values());
     }
 
-    public QuestionModel getQuestion(long id)
+    public List<QuestionModel> getQuestion(long id)
     {
-        return questionsMap.get(id);
+        QuestionModel question1 = new QuestionModel();
+        List<QuestionModel> list1=new ArrayList<>();
+        try{
+            Connection connection = jdbcConnection.getConnnection();
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM questions WHERE questions_id="+id+";");
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+                question1=new QuestionModel(rs.getLong("questions_id"),rs.getString("questions"),
+                        rs.getString("option1"),rs.getString("option2"),rs.getString("option3"),
+                        rs.getString("option4"));
+                list1.add(question1);
+            }
+            connection.close();
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+
+        return list1;
     }
 
     public QuestionModel addQuestion(QuestionModel question)
     {
-        question.setId(questionsMap.size()+1);
-        questionsMap.put(question.getId(),question);
+        try{
+            Connection connection = jdbcConnection.getConnnection();
+            String sql = "insert into questions(questions,option1,option2,option3,option4)values(?,?,?,?,?)";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1,question.getQuestion());
+            ps.setString(2,question.getOption1());
+            ps.setString(3,question.getOption2());
+            ps.setString(4,question.getOption3());
+            ps.setString(5,question.getOption4());
+            ps.executeUpdate();
+            ps.close();
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
         return question;
     }
 
-    public QuestionModel updateQuestion(QuestionModel question)
+    public QuestionModel updateQuestion(long id,QuestionModel question)
     {
-//        if(question.getId()<=0)
-//        {
-//            return null;
-//        }
-        questionsMap.put(question.getId(),question);
+        try{
+            Connection connection = jdbcConnection.getConnnection();
+            String s1="\"";
+            String sql="UPDATE questions set questions="+s1+question.getQuestion()+s1+",option1="+s1+question.getOption1()+s1+",option2="+s1+question.getOption2()+s1+",option3="+s1+question.getOption3()+s1+",option4="+s1+question.getOption4()+s1+"where questions_id="+id+";";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.executeUpdate();
+            ps.close();
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+
         return question;
     }
 
     public QuestionModel removeQuestion(long id)
     {
 
-        return questionsMap.remove(id);
+//        return questionsMap.remove(id);
+        try{
+            Connection connection = jdbcConnection.getConnnection();
+            String s1="\"";
+            String sql="";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.executeUpdate();
+            ps.close();
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
     }
+
 }
