@@ -4,7 +4,9 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
 public class QuestionModel {
     private long id;
     private String question;

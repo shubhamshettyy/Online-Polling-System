@@ -7,17 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0550d852-6da4-4b84-9b40-54d109eac5a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/online/polling/system/Questions/QuestionResource.class" afterPath="$PROJECT_DIR$/target/classes/org/online/polling/system/Questions/QuestionResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/online/polling/system/Questions/QuestionModel.class" afterPath="$PROJECT_DIR$/target/classes/org/online/polling/system/Questions/QuestionModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/online/polling/system/Questions/QuestionService.class" afterPath="$PROJECT_DIR$/target/classes/org/online/polling/system/Questions/QuestionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/pollingsystem/WEB-INF/classes/org/online/polling/system/Questions/QuestionResource.class" afterPath="$PROJECT_DIR$/target/pollingsystem/WEB-INF/classes/org/online/polling/system/Questions/QuestionResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/pollingsystem/WEB-INF/classes/org/online/polling/system/Questions/QuestionModel.class" afterPath="$PROJECT_DIR$/target/pollingsystem/WEB-INF/classes/org/online/polling/system/Questions/QuestionModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/pollingsystem/WEB-INF/classes/org/online/polling/system/Questions/QuestionService.class" afterPath="$PROJECT_DIR$/target/pollingsystem/WEB-INF/classes/org/online/polling/system/Questions/QuestionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/PollingSystem_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/PollingSystem_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PollingSystem.iml" afterPath="$PROJECT_DIR$/PollingSystem.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionResource.java" afterPath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionModel.java" afterPath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java" afterPath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,7 +40,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="1003">
               <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding />
             </state>
@@ -73,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionModel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QuestionModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,8 +84,8 @@
       <file leaf-file-name="QuestionResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="357">
+              <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#712#713#0" expanded="true" />
@@ -99,24 +95,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+            <state relative-caret-position="1717">
+              <caret line="106" column="14" lean-forward="false" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1569299048086" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
-                <marker date="1569299048086" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
-                <marker date="1569299048086" expanded="true" signature="2542:2623" ph="insert into questions... " />
-                <marker date="1569299048086" expanded="true" signature="3335:3366" ph="UPDATE quest... " />
-                <marker date="1569299048086" expanded="true" signature="3335:3394" ph="UPDATE quest... " />
-                <marker date="1569299048086" expanded="true" signature="3335:3407" ph="UPDATE quest... " />
-                <marker date="1569299048086" expanded="true" signature="3335:3434" ph="UPDATE quest... " />
-                <marker date="1569299048086" expanded="true" signature="3335:3447" ph="UPDATE quest... " />
-                <marker date="1569299048086" expanded="true" signature="3335:3487" ph="UPDATE quest... " />
-                <marker date="1569299048086" expanded="true" signature="3335:3527" ph="UPDATE quest... " />
-                <marker date="1569299048086" expanded="true" signature="3335:3577" ph="UPDATE quest... " />
+                <marker date="1569356132836" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+                <marker date="1569356132836" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+                <marker date="1569356132836" expanded="true" signature="2542:2623" ph="insert into questions... " />
+                <marker date="1569356132836" expanded="true" signature="3335:3366" ph="UPDATE quest... " />
+                <marker date="1569356132836" expanded="true" signature="3335:3394" ph="UPDATE quest... " />
+                <marker date="1569356132836" expanded="true" signature="3335:3407" ph="UPDATE quest... " />
+                <marker date="1569356132836" expanded="true" signature="3335:3434" ph="UPDATE quest... " />
+                <marker date="1569356132836" expanded="true" signature="3335:3447" ph="UPDATE quest... " />
+                <marker date="1569356132836" expanded="true" signature="3335:3487" ph="UPDATE quest... " />
+                <marker date="1569356132836" expanded="true" signature="3335:3527" ph="UPDATE quest... " />
+                <marker date="1569356132836" expanded="true" signature="3335:3577" ph="UPDATE quest... " />
               </folding>
             </state>
           </provider>
@@ -125,8 +131,8 @@
       <file leaf-file-name="DatabaseClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/DatabaseClass/DatabaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
+            <state relative-caret-position="170">
+              <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/online/polling/system/DatabaseClass/DatabaseClass.java" />
         <option value="$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.29/jersey-common-2.29.jar!/org/glassfish/jersey/internal/Errors.class" />
         <option value="$PROJECT_DIR$/src/main/java/org/online/polling/system/Users/UserModel.java" />
@@ -163,7 +168,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionResource.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionModel.java" />
       </list>
     </option>
   </component>
@@ -187,7 +194,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="16" />
     <option name="width" value="1346" />
     <option name="height" value="735" />
@@ -210,8 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,8 +287,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,15 +494,16 @@
       <workItem from="1567140975195" duration="9876000" />
       <workItem from="1569076352911" duration="10202000" />
       <workItem from="1569250126287" duration="171000" />
-      <workItem from="1569252776341" duration="4306000" />
+      <workItem from="1569252776341" duration="9096000" />
+      <workItem from="1570025280143" duration="185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36087000" />
+    <option name="totallyTimeSpent" value="41062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -518,7 +526,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34046054" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24432677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -577,6 +585,93 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Users/UserResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="60" lean-forward="true" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="106" column="14" lean-forward="true" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1569356132836" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+            <marker date="1569356132836" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+            <marker date="1569356132836" expanded="true" signature="2542:2623" ph="insert into questions... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3366" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3394" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3407" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3434" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3447" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3487" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3527" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3577" ph="UPDATE quest... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/DatabaseClass/DatabaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
           <folding />
@@ -606,17 +701,17 @@
           <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1569299048086" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
-            <marker date="1569299048086" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
-            <marker date="1569299048086" expanded="true" signature="2542:2623" ph="insert into questions... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3366" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3394" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3407" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3434" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3447" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3487" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3527" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3577" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+            <marker date="1569356132836" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+            <marker date="1569356132836" expanded="true" signature="2542:2623" ph="insert into questions... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3366" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3394" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3407" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3434" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3447" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3487" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3527" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3577" ph="UPDATE quest... " />
           </folding>
         </state>
       </provider>
@@ -728,9 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,29 +843,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/DatabaseClass/DatabaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="1003">
           <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding />
         </state>
@@ -787,10 +859,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/DatabaseClass/DatabaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="106" column="14" lean-forward="false" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1569356132836" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+            <marker date="1569356132836" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+            <marker date="1569356132836" expanded="true" signature="2542:2623" ph="insert into questions... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3366" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3394" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3407" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3434" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3447" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3487" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3527" ph="UPDATE quest... " />
+            <marker date="1569356132836" expanded="true" signature="3335:3577" ph="UPDATE quest... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="357">
+          <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#712#713#0" expanded="true" />
@@ -799,23 +910,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+        <state relative-caret-position="17">
+          <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1569299048086" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
-            <marker date="1569299048086" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
-            <marker date="1569299048086" expanded="true" signature="2542:2623" ph="insert into questions... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3366" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3394" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3407" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3434" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3447" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3487" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3527" ph="UPDATE quest... " />
-            <marker date="1569299048086" expanded="true" signature="3335:3577" ph="UPDATE quest... " />
           </folding>
         </state>
       </provider>

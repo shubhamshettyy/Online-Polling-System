@@ -103,18 +103,18 @@ public class QuestionService {
     public QuestionModel removeQuestion(long id)
     {
 
-//        return questionsMap.remove(id);
-        try{
-            Connection connection = jdbcConnection.getConnnection();
-            String s1="\"";
-            String sql="";
-            PreparedStatement ps = connection.prepareStatement(sql);
-            ps.executeUpdate();
-            ps.close();
-        }
-        catch(SQLException e){
-            e.printStackTrace();
-        }
+        return questionsMap.remove(id);
+//        try{
+//            Connection connection = jdbcConnection.getConnnection();
+//            String s1="\"";
+//            String sql="D";
+//            PreparedStatement ps = connection.prepareStatement(sql);
+//            ps.executeUpdate();
+//            ps.close();
+//        }
+//        catch(SQLException e){
+//            e.printStackTrace();
+//        }
     }
 
 }
