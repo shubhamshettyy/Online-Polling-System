@@ -1,5 +1,6 @@
 package org.online.polling.system.DatabaseClass;
 
+import org.online.polling.system.Answers.AnswerModel;
 import org.online.polling.system.Questions.QuestionModel;
 
 import java.sql.Connection;
@@ -10,6 +11,7 @@ import java.util.Map;
 
 public class DatabaseClass {
     private static Map<Long, QuestionModel> questions = new HashMap<>();
+    private static Map<Long, AnswerModel> answers = new HashMap<>();
 
     public Connection getConnnection() {
         Connection connection = null;
@@ -24,5 +26,8 @@ public class DatabaseClass {
     }
     public static Map<Long, QuestionModel> getQuestions() {
         return questions;
+    }
+    public static Map<Long, AnswerModel> getAnswers() {
+        return answers;
     }
 }
