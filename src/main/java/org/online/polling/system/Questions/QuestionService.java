@@ -77,9 +77,13 @@ public class QuestionService {
             ps.executeUpdate();
             ps.close();
 
-            String sql1 = "insert into answers (questions_id,question,option1,option2,option3,option4) values(last_insert_id(),?,0,0,0,0)";
+            String sql1 = "insert into answers (questions_id,question,A,B,C,D,option1,option2,option3,option4) values(last_insert_id(),?,?,?,?,?,0,0,0,0)";
             PreparedStatement s = connection.prepareStatement(sql1);
             s.setString(1,question.getQuestion());
+            s.setString(2,question.getOption1());
+            s.setString(3,question.getOption2());
+            s.setString(4,question.getOption3());
+            s.setString(5,question.getOption4());
             s.executeUpdate();
             s.close();
         }

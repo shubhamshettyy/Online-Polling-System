@@ -27,7 +27,7 @@ public class AnswerService {
             PreparedStatement ps = connection.prepareStatement("SELECT * FROM answers;");
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
-                answer =new AnswerModel(rs.getLong("answers_id"),rs.getString("question"),rs.getInt("questions_id"),
+                answer =new AnswerModel(rs.getLong("answers_id"),rs.getString("question"),rs.getString("A"),rs.getString("B"),rs.getString("C"),rs.getString("D"),rs.getInt("questions_id"),
                         rs.getInt("option1"),rs.getInt("option2"),rs.getInt("option3"),rs.getInt("option4"));
                 list.add(answer);
             }

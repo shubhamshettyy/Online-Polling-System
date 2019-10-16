@@ -1,0 +1,196 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Visualization</title>
+		<!-- Bootstrap CSS -->
+		<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+    <!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+<!--===============================================================================================-->
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/chart.css"> -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	</head>
+	
+	<body class="bg-primary">
+		
+
+		<div class="col-md-6 offset-md-3 my-5">
+			<div class="card">
+				<div class="card-body">
+					<h2>Visualization</h2>
+				</div>	
+				<div class="card-body" id="charts">
+<!-- 					<canvas id="myChart0"></canvas>
+					<canvas id="myChart1"></canvas>
+					<canvas id="myChart2"></canvas> -->
+				</div>	
+		</div>
+	</div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	
+	
+	</body>
+
+	<script>
+		$( document ).ready(function(){
+		
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', "http://localhost:8000/webapi/admin", true);
+				xhr.send();
+				 
+				xhr.onreadystatechange = processRequest;
+				 
+				function processRequest(e) {
+					if (xhr.readyState == 4 && xhr.status == 200) {
+						var response = JSON.parse(xhr.responseText);
+						var name="myChart";
+						var min=0;
+						var max=2;
+						Chart.defaults.global.defaultFontSize = 14;
+
+						
+						for(var i=0;i<response.length;i++)
+						{
+							var id=name+i;
+							document.getElementById("charts").innerHTML+="<canvas id="+id+"></canvas>";
+							document.getElementById("charts").innerHTML+="</br></br></br>"
+						}
+						for(var i=0 ; i < response.length ; i++)
+						{
+							var id=name+i;
+							console.log(id);
+							// document.getElementById("charts").innerHTML+="<canvas id="+id+"></canvas>";
+							var ctx = document.getElementById(id).getContext('2d');
+							console.log(ctx);
+							console.log(i);
+							var random=Math.floor(Math.random() * (max - min + 1)) + min;
+							console.log(random);
+							switch(random)
+							{
+								case 0:Chart.defaults.global.legend.display = false;
+								var chart = new Chart(ctx, {
+										// The type of chart we want to create
+										type: 'bar',
+
+										// The data for our dataset
+										data: {
+											labels: [ response[i].a, response[i].b, response[i].c, response[i].d],
+											datasets: [{
+												//label:false,
+												backgroundColor: ['red','blue','green','yellow'],
+												borderColor: 'rgb(0, 99, 132)',
+												data: [response[i].option1, response[i].option2, response[i].option3, response[i].option4],
+											}]
+										},
+
+										// Configuration options go here
+										options: {
+											scales: {
+												yAxes: [{
+													display: true,
+													ticks: {
+														suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
+														// OR //
+														beginAtZero: true   // minimum value will be 0.
+													}
+												}]
+											},
+											title: {
+									                  display: true,
+									                  text: response[i].question,
+									                  position: 'top',
+									                  fontSize:16
+									              }
+										}
+										
+									});
+									break;
+								case 1:Chart.defaults.global.legend.display = false;
+								var chart = new Chart(ctx, {
+										// The type of chart we want to create
+										type: 'line',
+
+										// The data for our dataset
+										data: {
+											labels: [ response[i].a, response[i].b, response[i].c, response[i].d],
+											datasets: [{
+												label: response[i].question,
+												backgroundColor:'rgba(255,12,32,.3)',
+												borderColor: 'rgb(0, 199, 132)',
+												data: [response[i].option1, response[i].option2, response[i].option3, response[i].option4],
+											}]
+										},
+
+										// Configuration options go here
+										options: {
+											scales: {
+												yAxes: [{
+													display: true,
+													ticks: {
+														suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
+														// OR //
+														beginAtZero: true   // minimum value will be 0.
+													}
+												}]
+											},
+											title: {
+									                  display: true,
+									                  text: response[i].question,
+									                  position: 'top',
+									                  fontSize:16
+									              }
+										}
+									});
+
+									break;
+								case 2:var chart = new Chart(ctx, {
+							// The type of chart we want to create
+							type: 'doughnut',
+
+							// The data for our dataset
+							data: {
+								labels: [ response[i].a, response[i].b, response[i].c, response[i].d],
+								datasets: [{
+									//label: response[i].question,
+									backgroundColor: ['red','blue','green','yellow'],
+									borderColor: 'rgb(0, 99, 132)',
+									data: [response[i].option1, response[i].option2, response[i].option3, response[i].option4],
+								}]
+							},
+
+							// Configuration options go here
+							options: {
+											title: {
+									                  display: true,
+									                  text: response[i].question,
+									                  position: 'top',
+									                  fontSize:16
+									              }
+										}
+									});
+									break;
+							}
+							
+						}
+								
+					}
+				}	
+			}	
+		)
+		
+		
+	</script>
+
+</html>
