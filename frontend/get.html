@@ -28,11 +28,11 @@
 							var option4=response[i].option4;
 							
 
-							document.getElementById("print").innerHTML+="<p>"+"Q"+(i+1)+". "+question+"</p>";
-							document.getElementById("print").innerHTML+="<p> <input type=radio name = "+s+">"+" "+option1+"</p>";"+s+"
-							document.getElementById("print").innerHTML+="<p> <input type=radio name = "+s+">"+" "+option2+"</p>";
-							document.getElementById("print").innerHTML+="<p> <input type=radio name = "+s+">"+" "+option3+"</p>";
-							document.getElementById("print").innerHTML+="<p> <input type=radio name = "+s+">"+" "+option4+"</p>";
+							document.getElementById("print").innerHTML+="<p><strong>"+"Q"+(i+1)+". "+question+"</strong></p>";
+							document.getElementById("print").innerHTML+="<p>"+"A. "+option1+"</p>";
+							document.getElementById("print").innerHTML+="<p>"+"B. "+option2+"</p>";
+							document.getElementById("print").innerHTML+="<p>"+"C. "+option3+"</p>";
+							document.getElementById("print").innerHTML+="<p>"+"D. "+option4+"</p>";
 							
 							document.getElementById("print").innerHTML+="<p><br/></p>";
 							s="";
@@ -73,10 +73,6 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div id="print" class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-				<div>
-					<button class="login100-form-btn">Submit</button>
-					<br><br>
-				</div>
 			</div>
 
 		</div>

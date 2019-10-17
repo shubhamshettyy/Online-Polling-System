@@ -51,7 +51,8 @@
                 dataType: "json",
                 data: JSON.stringify(formData),
                 success: function(d) {
-                    alert(d);
+                    window.location.href="admin_loggedin.html";
+                    alert("Data added successfully.");
                 }
             });
         });
