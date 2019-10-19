@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V14</title>
+	<title>Online Polling System</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -37,23 +37,29 @@
 
 					
 
-					<div class="container-login100-form-btn" style="text-align: center;">
+					<div class="container-login100-form-btn" style="margin: 20px; display: inline-block;">
 						<h4><strong>Choose any of the following:</strong></h4>
-						<button class="login100-form-btn" style="margin: 20px; display: inline-block;">
-							<a href="get.html">View Question List</a>
-						</button>
+						<br>
+						<a href="get.html" class="login100-form-btn" id="get">
+							View Questions List
+						</a>
 					</div>	
 
 					<div class="container-login100-form-btn" style="margin: 20px; display: inline-block;">
-						<button class="login100-form-btn">
-							<a href="post.html">Add Question</a>
-						</button>
+						<a href="post.html" class="login100-form-btn" id="add">
+							Add Question
+						</a>
 					</div>
 
 					<div class="container-login100-form-btn" style="margin: 20px; display: inline-block;">
-						<button class="login100-form-btn">
-							<a href="charts.html">View Visualization</a> 
-						</button>
+						<a href="charts.html" class="login100-form-btn" id="charts">
+							View Visualization
+						</a>
+					</div>
+					<div class="container-login100-form-btn" style="margin: 20px; display: inline-block;">
+						<a href="index.html" class="login100-form-btn" id="charts">
+							Logout
+						</a>
 					</div>
 
 				</form>
@@ -80,6 +86,21 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+
+			document.getElementById("get").onclick=function() {
+				window.location.href="get.html";
+			}
+			document.getElementById("add").onclick=function() {
+				window.location.href="post.html";
+			}
+			document.getElementById("charts").onclick=function() {
+				window.location.href="charts.html";
+			}
+
+		
+
+	</script>
 
 </body>
 </html>

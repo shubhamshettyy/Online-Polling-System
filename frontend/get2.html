@@ -2,7 +2,7 @@
 
 	<head>
 		
-		
+		<title>Questions</title>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -32,14 +32,10 @@
 
 	<div class="limiter">
 		<div class="container-login100">
-			<div id="print" class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-				<!-- <div>
-					
-					<button id = "submit" class="login100-form-btn">Submit</button>
-					<br><br>
-				</div> -->
+			<div id="print" class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55" style="display: inline-block;">
+				
 			</div>
-				<button id = "submit" type="submit" value="Submit">Submit</button>
+				
 		</div>
 	</div>
 
@@ -72,7 +68,7 @@
 						var j=0;
 						var id="";
 						
-						document.getElementById("print").innerHTML+="<p>Number of Questions: <span id=\"number_of_questions\">"+response.length+"</span></p>";
+						document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\">Number of Questions: <span id=\"number_of_questions\">"+response.length+"</span></p>";
 						document.getElementById("print").innerHTML+="<form id=\"myform\">";
 						for(var i=0;i<response.length;i++)
 						{
@@ -85,28 +81,43 @@
 							var option4=response[i].option4;
 							
 
-							document.getElementById("print").innerHTML+="<p>"+"Q"+(i+1)+"</p>";
+							document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\">"+"Q"+(i+1)+"</p>";
 
-							document.getElementById("print").innerHTML+="<strong><pre id=\""+id+"\">"+question+"</pre></strong>";
+							document.getElementById("print").innerHTML+="<strong><p style=\"font-size:130%;\" id=\""+id+"\">"+question+"</p></strong>";
 
-							document.getElementById("print").innerHTML+="<p> <input type=\"radio\" name = \""+i+"\" value=\"1\"/>"+" "+option1+"</p>";
-							document.getElementById("print").innerHTML+="<p> <input type=\"radio\" name = \""+i+"\" value=\"2\"/>"+" "+option2+"</p>";
+							document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\"> <input type=\"radio\" name = \""+i+"\" value=\"1\"/>"+" "+option1+"</p>";
+							document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\"> <input type=\"radio\" name = \""+i+"\" value=\"2\"/>"+" "+option2+"</p>";
 
-							document.getElementById("print").innerHTML+="<p> <input type=\"radio\" name = \""+i+"\" value=\"3\"/>"+" "+option3+"</p>";
-							document.getElementById("print").innerHTML+="<p> <input type=\"radio\" name = \""+i+"\" value=\"4\"/>"+" "+option4+"</p>"
+							document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\"> <input type=\"radio\" name = \""+i+"\" value=\"3\"/>"+" "+option3+"</p>";
+							document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\"> <input type=\"radio\" name = \""+i+"\" value=\"4\"/>"+" "+option4+"</p>"
 							
 							document.getElementById("print").innerHTML+="<p><br/></p>";
 							s="";
 						}
 						//<button id = \"submit\" value=\"Submit\">Submit</button>
 						//document.getElementById("print").innerHTML+="<button id=\"submit\" type=\"submit\" value=\"Submit\">Submit</button>";
+						// document.getElementById("print").innerHTML+="<button class=\"login100-form-btn\" id = \"submit\" type=\"submit\" value=\"Submit\">Submit</button>"
+						
+						
 						document.getElementById("print").innerHTML+="</form>";
 							
-					}
-				}	
-			}	
-		)
+				
+			
+
+
+  		var p=document.getElementById("print");
+		var button=document.createElement('button');
+		// button.setAttribute("innerHTML","Submit");
+		button.innerHTML="Submit";
+		button.setAttribute("class","login100-form-btn");
+		button.setAttribute("id","submit");
+		button.setAttribute("type","submit");
+		button.setAttribute("value","Submit");
+		button.setAttribute("style","float: right;");
 		
+		p.appendChild(button);
+
+
 		document.getElementById("submit").onclick=function() {
 		
 			var total_number=document.getElementById("number_of_questions").innerHTML;
@@ -116,6 +127,7 @@
 			var chosen_option=-1;
 			var jsonStr='{"data":[]}';
 			var id="";
+			//var viraj = "undefined";
 
 		
 			for(var i=0 ; i < total_number ; i++)
@@ -129,6 +141,10 @@
 
 				s=s+i;
 				chosen_option=$("input[type='radio'][name='"+s+"']:checked").val();
+				if (chosen_option == null) {
+					alert("You must answer all questions");
+					return ;
+				}
 
 				switch(chosen_option)
 				{
@@ -151,7 +167,7 @@
 				var obj=JSON.parse(jsonStr);
 				obj['data'].push(new_element);
 				jsonStr=JSON.stringify(obj);
-				console.log(jsonStr);
+				// console.log(jsonStr);
 
 				s="";
 			}
@@ -164,12 +180,16 @@
                 dataType: "json",
                 data: JSON.stringify(obj['data']),
                 success: function(d) {
-                	window.location.href="index.html";
-                    alert("Response recorded successfully.");
+                    alert("Response Recorded successfully.\nThank You");
+                    window.location.href="index.html";
                 }
             });
 		};
 		
+			}
+			}	
+			}	
+		)
 	</script>
 
 </html>

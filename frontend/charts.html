@@ -21,6 +21,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>		
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		
+
 		<link rel="stylesheet" type="text/css" href="css/charts.css">
 
 	</head>
@@ -30,8 +32,10 @@
 
 		<div class="col-md-6 offset-md-3 my-5">
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body btn-group" style="display: inline-block;">
+					<button class="button-primary" style="width:19%; float: right;" type="button" id="back">Go back</button>
 					<h2>Visualization</h2>
+					
 				</div>	
 				<div class="btn-group" style="width:100%; margin: 0 auto;">
 				  <button class="button-primary" style="width:25%" type="button" id="bar">Bar</button>
@@ -47,12 +51,20 @@
 		</div>
 	</div>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script> -->	
 	
 	
 	</body>
 
 	<script>
 		var count=0;
+
+		document.getElementById("back").onclick=function(){
+			window.location.href="admin_loggedin.html";
+		}
+
+
+
 		document.getElementById("bar").onclick=function(){
 					count++;
 					var xhr = new XMLHttpRequest();
@@ -101,7 +113,7 @@
 											labels: [ response[i].a, response[i].b, response[i].c, response[i].d],
 											datasets: [{
 												label: response[i].question,
-												backgroundColor:['#312b5c','#0074a0','#3abdbb','#a8ffd8'],
+												backgroundColor:['#312b5c','#0074a0','#3abdbb','#7bcad1'],
 												borderColor: 'rgb(0, 199, 132)',
 												data: [response[i].option1, response[i].option2, response[i].option3, response[i].option4],
 											}]
@@ -134,6 +146,7 @@
 
 		document.getElementById("pie").onclick=function(){
 
+
 					count++;
 					
 					var xhr = new XMLHttpRequest();
@@ -161,7 +174,7 @@
 						{
 							var id=name+i;
 							document.getElementById("charts").innerHTML+="<canvas id="+id+"></canvas>";
-							document.getElementById("charts").innerHTML+="</br></br></br>"
+							document.getElementById("charts").innerHTML+="</br></br>";
 						}
 						
 						for(var i=0 ; i < response.length ; i++)
@@ -172,7 +185,7 @@
 							var ctx = document.getElementById(id).getContext('2d');
 							console.log(ctx);
 							console.log(i);
-							Chart.defaults.global.legend.display = false;
+							//Chart.defaults.global.legend.display = false;
 								var chart = new Chart(ctx, {
 							// The type of chart we want to create
 							type: 'pie',
@@ -182,7 +195,7 @@
 								labels: [ response[i].a, response[i].b, response[i].c, response[i].d],
 								datasets: [{
 									//label: response[i].question,
-									backgroundColor: ['#312b5c','#0074a0','#3abdbb','#a8ffd8'],
+									backgroundColor: ['#312b5c','#0074a0','#3abdbb','#7bcad1'],
 									borderColor: 'rgb(0, 99, 132)',
 									data: [response[i].option1, response[i].option2, response[i].option3, response[i].option4],
 								}]
@@ -195,8 +208,13 @@
 									                  text: response[i].question,
 									                  position: 'top',
 									                  fontSize:16
-									              }
+									              },
+							              legend:{
+							              	display:true,
+							              	position:'top'
+							              }
 										}
+							
 									});
 		}
 	}
@@ -319,7 +337,7 @@
 							var ctx = document.getElementById(id).getContext('2d');
 							console.log(ctx);
 							console.log(i);
-							Chart.defaults.global.legend.display = false;
+							// Chart.defaults.global.legend.display = false;
 								var chart = new Chart(ctx, {
 							// The type of chart we want to create
 							type: 'doughnut',
@@ -328,8 +346,8 @@
 							data: {
 								labels: [ response[i].a, response[i].b, response[i].c, response[i].d],
 								datasets: [{
-									//label: response[i].question,
-									backgroundColor: ['#312b5c','#0074a0','#3abdbb','#a8ffd8'],
+									label: response[i].question,
+									backgroundColor: ['#312b5c','#0074a0','#3abdbb','#7bcad1'],
 									borderColor: 'rgb(0, 99, 132)',
 									data: [response[i].option1, response[i].option2, response[i].option3, response[i].option4],
 								}]
@@ -342,7 +360,12 @@
 									                  text: response[i].question,
 									                  position: 'top',
 									                  fontSize:16
-									              }
+									              },
+							              legend:{
+							              	display:true,
+							              	position:'top'
+							              }
+
 										}
 									});
 		}

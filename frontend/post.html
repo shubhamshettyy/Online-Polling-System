@@ -3,7 +3,7 @@
 <head>
 	<meta charset="ISO-8859-1"/>
 <meta header="application/json">
-	<title>Online polling system</title>
+	<title>Add Question</title>
 	<!-- <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,7 @@
                 data: JSON.stringify(formData),
                 success: function(d) {
                     window.location.href="admin_loggedin.html";
-                    alert("Data added successfully.");
+                    alert("Question added successfully.");
                 }
             });
         });
@@ -86,7 +86,7 @@ font-size:14pt;
                     <span class="txt1 p-b-11">
                         Enter your Question
                     </span>
-                    <div class="wrap-input100 validate-input m-b-36" data-validate = "Question is required">
+                    <div class="wrap-input100 validate-input " data-validate = "Question is required">
                         <input class="input100" type="text" id="question" name="question">
                         <span class="focus-input100"></span>
                     </div>
