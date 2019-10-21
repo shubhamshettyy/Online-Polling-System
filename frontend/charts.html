@@ -63,16 +63,15 @@
 			window.location.href="admin_loggedin.html";
 		}
 
-
-
-		document.getElementById("bar").onclick=function(){
-					count++;
-					var xhr = new XMLHttpRequest();
+		var xhr = new XMLHttpRequest();
 					xhr.open('GET', "http://localhost:8000/webapi/admin", true);
 					xhr.send();
-		 
 					xhr.onreadystatechange = processRequest;
-					function processRequest(e) {
+
+		function processRequest(e){
+		document.getElementById("bar").onclick=function(){
+					count++;
+					
 					if (xhr.readyState == 4 && xhr.status == 200) {
 						var response = JSON.parse(xhr.responseText);
 						var name="myChart";
@@ -142,19 +141,14 @@
 		}
 	}
 	}
-}
+
 
 		document.getElementById("pie").onclick=function(){
 
 
 					count++;
 					
-					var xhr = new XMLHttpRequest();
-					xhr.open('GET', "http://localhost:8000/webapi/admin", true);
-					xhr.send();
-		 
-					xhr.onreadystatechange = processRequest;
-					function processRequest(e) {
+				
 					if (xhr.readyState == 4 && xhr.status == 200) {
 						var response = JSON.parse(xhr.responseText);
 						var name="myChart";
@@ -218,17 +212,12 @@
 									});
 		}
 	}
-	}
+	// }
 }
 
 		document.getElementById("line").onclick=function(){
 					count++;
-					var xhr = new XMLHttpRequest();
-					xhr.open('GET', "http://localhost:8000/webapi/admin", true);
-					xhr.send();
-		 
-					xhr.onreadystatechange = processRequest;
-					function processRequest(e) {
+				
 					if (xhr.readyState == 4 && xhr.status == 200) {
 						var response = JSON.parse(xhr.responseText);
 						var name="myChart";
@@ -297,17 +286,12 @@
 									});
 		}
 	}
-	}
+	// }
 }
 
 		document.getElementById("doughnut").onclick=function(){
 					count++;
-					var xhr = new XMLHttpRequest();
-					xhr.open('GET', "http://localhost:8000/webapi/admin", true);
-					xhr.send();
-		 
-					xhr.onreadystatechange = processRequest;
-					function processRequest(e) {
+				
 					if (xhr.readyState == 4 && xhr.status == 200) {
 						var response = JSON.parse(xhr.responseText);
 						var name="myChart";
@@ -370,7 +354,9 @@
 									});
 		}
 	}
-	}
+	// }
+}
+
 }
 
 

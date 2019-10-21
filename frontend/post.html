@@ -35,6 +35,10 @@
         $("#form1").on("submit", function(event) {
             event.preventDefault();
 
+            if($('input[name=question]').val()=="" || $('input[name=opt1]').val()=="" || $('input[name=opt2]').val()=="" || $('input[name=opt3]').val()=="" || $('input[name=opt4]').val()==""){
+                alert("All fields are mandatory.");
+                return false;
+            }
             var formData = {
                 'question': $('input[name=question]').val(), 
                 'option1': $('input[name=opt1]').val(),
@@ -42,6 +46,7 @@
                 'option3': $('input[name=opt3]').val(),
                 'option4': $('input[name=opt4]').val(),
             };
+
             console.log(formData);
 
             $.ajax({

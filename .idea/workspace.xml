@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0550d852-6da4-4b84-9b40-54d109eac5a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/css/charts.css" afterPath="$PROJECT_DIR$/frontend/css/charts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionResource.java" afterPath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/get.html" afterPath="$PROJECT_DIR$/frontend/get.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/post.html" afterPath="$PROJECT_DIR$/frontend/post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java" afterPath="$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -152,25 +153,25 @@
       <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="117" column="68" lean-forward="false" selection-start-line="117" selection-start-column="68" selection-end-line="117" selection-end-column="68" />
+            <state relative-caret-position="257">
+              <caret line="123" column="25" lean-forward="false" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
               <folding>
-                <marker date="1571663854876" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
-                <marker date="1571663854876" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
-                <marker date="1571663854876" expanded="true" signature="2542:2623" ph="insert into questions... " />
-                <marker date="1571663854876" expanded="true" signature="3035:3054" ph="insert into answers... " />
-                <marker date="1571663854876" expanded="true" signature="3035:3143" ph="insert into answers... " />
-                <marker date="1571663854876" expanded="true" signature="3035:3161" ph="insert into answers... " />
-                <marker date="1571663854876" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
-                <marker date="1571663854876" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
-                <marker date="1571663854876" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
-                <marker date="1571663854876" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
-                <marker date="1571663854876" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
-                <marker date="1571663854876" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
-                <marker date="1571663854876" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
-                <marker date="1571663854876" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
-                <marker date="1571663854876" expanded="true" signature="4555:4596" ph="DELETE FROM " />
-                <marker date="1571663854876" expanded="true" signature="4757:4796" ph="DELETE FROM " />
+                <marker date="1571670045622" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+                <marker date="1571670045622" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+                <marker date="1571670045622" expanded="true" signature="2542:2623" ph="insert into questions... " />
+                <marker date="1571670045622" expanded="true" signature="3035:3054" ph="insert into answers... " />
+                <marker date="1571670045622" expanded="true" signature="3035:3143" ph="insert into answers... " />
+                <marker date="1571670045622" expanded="true" signature="3035:3161" ph="insert into answers... " />
+                <marker date="1571670045622" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
+                <marker date="1571670045622" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
+                <marker date="1571670045622" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
+                <marker date="1571670045622" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
+                <marker date="1571670045622" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
+                <marker date="1571670045622" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
+                <marker date="1571670045622" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
+                <marker date="1571670045622" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
+                <marker date="1571670045622" expanded="true" signature="4555:4596" ph="DELETE FROM " />
+                <marker date="1571670045622" expanded="true" signature="4757:4796" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -543,12 +544,12 @@
       <workItem from="1569250126287" duration="171000" />
       <workItem from="1569252776341" duration="9096000" />
       <workItem from="1570025280143" duration="16562000" />
-      <workItem from="1571151251262" duration="3541000" />
+      <workItem from="1571151251262" duration="4592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60980000" />
+    <option name="totallyTimeSpent" value="62031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -727,22 +728,22 @@
         <state relative-caret-position="1530">
           <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
           <folding>
-            <marker date="1571663854876" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
-            <marker date="1571663854876" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
-            <marker date="1571663854876" expanded="true" signature="2542:2623" ph="insert into questions... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3054" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3143" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3161" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="4555:4596" ph="DELETE FROM " />
-            <marker date="1571663854876" expanded="true" signature="4757:4796" ph="DELETE FROM " />
+            <marker date="1571670045622" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+            <marker date="1571670045622" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+            <marker date="1571670045622" expanded="true" signature="2542:2623" ph="insert into questions... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3054" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3143" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3161" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="4555:4596" ph="DELETE FROM " />
+            <marker date="1571670045622" expanded="true" signature="4757:4796" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -820,22 +821,22 @@
         <state relative-caret-position="1717">
           <caret line="106" column="14" lean-forward="true" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
           <folding>
-            <marker date="1571663854876" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
-            <marker date="1571663854876" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
-            <marker date="1571663854876" expanded="true" signature="2542:2623" ph="insert into questions... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3054" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3143" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3161" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="4555:4596" ph="DELETE FROM " />
-            <marker date="1571663854876" expanded="true" signature="4757:4796" ph="DELETE FROM " />
+            <marker date="1571670045622" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+            <marker date="1571670045622" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+            <marker date="1571670045622" expanded="true" signature="2542:2623" ph="insert into questions... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3054" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3143" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3161" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="4555:4596" ph="DELETE FROM " />
+            <marker date="1571670045622" expanded="true" signature="4757:4796" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -892,22 +893,22 @@
         <state relative-caret-position="646">
           <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="39" />
           <folding>
-            <marker date="1571663854876" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
-            <marker date="1571663854876" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
-            <marker date="1571663854876" expanded="true" signature="2542:2623" ph="insert into questions... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3054" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3143" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3161" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="4555:4596" ph="DELETE FROM " />
-            <marker date="1571663854876" expanded="true" signature="4757:4796" ph="DELETE FROM " />
+            <marker date="1571670045622" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+            <marker date="1571670045622" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+            <marker date="1571670045622" expanded="true" signature="2542:2623" ph="insert into questions... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3054" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3143" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3161" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="4555:4596" ph="DELETE FROM " />
+            <marker date="1571670045622" expanded="true" signature="4757:4796" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1174,25 +1175,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/online/polling/system/Questions/QuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="117" column="68" lean-forward="false" selection-start-line="117" selection-start-column="68" selection-end-line="117" selection-end-column="68" />
+        <state relative-caret-position="257">
+          <caret line="123" column="25" lean-forward="false" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
           <folding>
-            <marker date="1571663854876" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
-            <marker date="1571663854876" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
-            <marker date="1571663854876" expanded="true" signature="2542:2623" ph="insert into questions... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3054" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3143" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3035:3161" ph="insert into answers... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
-            <marker date="1571663854876" expanded="true" signature="4555:4596" ph="DELETE FROM " />
-            <marker date="1571663854876" expanded="true" signature="4757:4796" ph="DELETE FROM " />
+            <marker date="1571670045622" expanded="true" signature="870:893" ph="SELECT * FRO... questions" />
+            <marker date="1571670045622" expanded="true" signature="1794:1837" ph="SELECT * FRO... questions" />
+            <marker date="1571670045622" expanded="true" signature="2542:2623" ph="insert into questions... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3054" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3143" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3035:3161" ph="insert into answers... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3897" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3925" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3938" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3965" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:3978" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4018" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4058" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="3866:4108" ph="UPDATE quest... " />
+            <marker date="1571670045622" expanded="true" signature="4555:4596" ph="DELETE FROM " />
+            <marker date="1571670045622" expanded="true" signature="4757:4796" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>

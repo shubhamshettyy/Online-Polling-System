@@ -122,7 +122,7 @@ public class QuestionService {
             ps.close();
 
             String sql1="DELETE FROM answers where questions_id="+id+";";
-            PreparedStatement ps1 = connection.prepareStatement(sql);
+            PreparedStatement ps1 = connection.prepareStatement(sql1);
             ps1.executeUpdate();
             ps1.close();
         }
