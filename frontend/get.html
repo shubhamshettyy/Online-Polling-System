@@ -29,6 +29,13 @@
 							
 
 							document.getElementById("print").innerHTML+="<p style=\"font-size:120%;\"><strong>"+"Q"+(i+1)+". "+question+"</strong></p>";
+							var p=document.getElementById("print");
+							var btn=document.createElement('button');
+							btn.innerHTML="Delete";
+							btn.setAttribute("class","login100-delete-btn");
+							btn.setAttribute("id","delete");
+							btn.setAttribute("style","float: right; height:25px; width:70px;");
+							p.appendChild(btn);
 							document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\">"+"A. "+option1+"</p>";
 							document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\">"+"B. "+option2+"</p>";
 							document.getElementById("print").innerHTML+="<p style=\"font-size:100%;\">"+"C. "+option3+"</p>";

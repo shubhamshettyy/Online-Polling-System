@@ -1,6 +1,7 @@
 .btn-group button {
   background-color: #164187; /* Green background */
   border: 1px solid; /* Green border */
+  border-radius: 25px;
   color: white; /* White text */
   margin: 10px;
   padding: 10px 24px; /* Some padding */
@@ -23,8 +24,12 @@
 .btn-group button:hover {
   background-color: #7aabfa;
 }
+
+
 .button-primary:focus,
 .button-primary:active,
 .button-primary.active {
+    /*border-radius: 25px;*/
     background-color: #7aabfa;
+    outline: none !important;
 }
