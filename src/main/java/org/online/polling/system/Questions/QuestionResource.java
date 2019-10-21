@@ -38,7 +38,6 @@ public class QuestionResource {
     @DELETE
     @Path("{question_id}")
     public void deleteQuestion(@PathParam("question_id") long id) {
-//        question.setId(id);
         questionService.removeQuestion(id);
     }
 

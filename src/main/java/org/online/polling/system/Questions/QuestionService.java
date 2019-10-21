@@ -110,21 +110,25 @@ public class QuestionService {
         return question;
     }
 
-    public QuestionModel removeQuestion(long id)
+    public void removeQuestion(long id)
     {
 
-        return questionsMap.remove(id);
-//        try{
-//            Connection connection = jdbcConnection.getConnnection();
-//            String s1="\"";
-//            String sql="D";
-//            PreparedStatement ps = connection.prepareStatement(sql);
-//            ps.executeUpdate();
-//            ps.close();
-//        }
-//        catch(SQLException e){
-//            e.printStackTrace();
-//        }
+//        return questionsMap.remove(id);
+        try{
+            Connection connection = jdbcConnection.getConnnection();
+            String sql="DELETE FROM questions where questions_id="+id+";";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.executeUpdate();
+            ps.close();
+
+            String sql1="DELETE FROM answers where questions_id="+id+";";
+            PreparedStatement ps1 = connection.prepareStatement(sql);
+            ps1.executeUpdate();
+            ps1.close();
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
 }
