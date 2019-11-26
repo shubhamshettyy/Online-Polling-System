@@ -58,6 +58,7 @@
 		
 				var xhr = new XMLHttpRequest();
 				xhr.open('GET', "http://localhost:8000/webapi/questions", true);
+				// xhr.withCredentials=true;
 				xhr.send();
 				 
 				xhr.onreadystatechange = processRequest;
@@ -174,6 +175,9 @@
             $.ajax({
                 url: "http://localhost:8000/webapi/admin",
                 type: "put",
+                xhrFields:{
+                	withCredentials:true
+                },
                 contentType:"application/json",
                 dataType: "json",
                 data: JSON.stringify(obj['data']),
